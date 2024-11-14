@@ -1,0 +1,12 @@
+<html>
+    <body>
+        <h1 style="text-align: center"> Thanks for the payment.your transaction id is <span id="tid"></span></h1>
+    </body>
+</html>
+
+<script>
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const tid = urlParams.get('tid');
+    document.getElementById("tid").innerHTML = tid;
+</script>
